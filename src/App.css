@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 body {
-  background: #ff0084;  
-  background: -webkit-linear-gradient(to right, #33001b, #ff0084);  
-  background: linear-gradient(to right, #33001b, #ff0084); 
+  background: #50C9C3; 
+  background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  
+  background: linear-gradient(to right, #96DEDA, #50C9C3); 
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  position: relative;
+}
+.pencil-img{
+position: absolute;
+z-index: -1;
 }
 header {
   font-size: 2rem;
@@ -30,14 +35,22 @@ form button {
   border: none;
   background: white;
 }
+form input{
+  border-radius:5px 0 0 5px ;
+  box-shadow: 0 2px 5px 1px rgba(0,186,187,.5);
+
+}
+form button{
+  border-radius:0 5px 5px 0;
+}
 form button {
-  color: #33001b;
+  color: #96deda;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #33001b;
+  background: #96deda;
   color: white;
 }
 .todo-container {
@@ -54,15 +67,20 @@ form button:hover {
 .todo {
   margin: 0.5rem;
   background: white;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1rem;
+  color: #04365f;
+  padding-left: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+  box-shadow: 0 2px 5px 1px rgba(0,186,187,.5);
 }
 .filter-todo {
   padding: 1rem;
+  box-shadow: 0 2px 5px 1px rgba(0,186,187,.5);
+  border-radius: 5px;
+ 
 }
 .todo li {
   flex: 1;
@@ -70,15 +88,15 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #33001b;
-  color: white;
+  background: #9e9e9e;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
 }
 .complete-btn {
-  background:#ff0084;
+  background:#96deda
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -118,7 +136,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #33001b;
+  color: #04365f;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -130,7 +148,7 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #33001b;
+  background: #96deda;
   cursor: pointer;
   pointer-events: none;
 }

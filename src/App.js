@@ -74,9 +74,9 @@ const getLocalTodo = () =>{
   return (
     <div className="App">
 
-    
+      <img className="pencil-img" alt="pencilimage" src="./pencil.png" />
       <header>
-        <h1>Aml's ToDo List</h1>
+        <h1>I Will ToDo List</h1>
       </header>
 
       <Form
